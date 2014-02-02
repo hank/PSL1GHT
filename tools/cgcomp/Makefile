@@ -21,7 +21,7 @@ CFLAGS	+=	$(INCLUDES)
 CXXFLAGS	:=	$(CFLAGS) -fno-rtti -fno-exceptions
 
 
-LDFLAGS	=	$(DEBUGFLAGS)
+LDFLAGS	=	$(DEBUGFLAGS) -ldl
 
 ifneq (,$(findstring MINGW,$(UNAME)))
 	PLATFORM	:= win32
